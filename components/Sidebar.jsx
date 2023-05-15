@@ -21,11 +21,11 @@ export default function Navigation(){
             </Link>
             <Link href={'/multiplePointers'} className={router === "/multiplePointers" ? 'activeNav' : 'inactiveNav'}>Multiple Pointers</Link>
             <Link href={'/slidingWindow'} className={router === "/slidingWindow" ? 'activeNav' : 'inactiveNav'}>Sliding Window</Link>
-            <Link href={'/'} className="inactiveNav">Divide and Conquer</Link>
-            <Link href={'/'}>Dynamic Programming</Link>
-            <Link href={'/'} className={router === '/' ? "activeNav" : "inactiveNav"}>Recursion</Link>
-            <Link href={'/'} className={router === '/' ? "activeNav" : "inactiveNav"}>Searching</Link>
-            <Link href={'/'} className={router === '/' ? "activeNav" : "inactiveNav"}>Sorting</Link>
+            <Link href={'/divideAndConquer'} className={router === '/divideAndConquer' ? 'activeNav' : 'inactiveNav'}>Divide and Conquer</Link>
+            <Link href={'/dynamicProgramming'} className={router === '/dynamicProgramming' ? 'activeNav' : 'inactiveNav'}>Dynamic Programming</Link>
+            <Link href={'/recursion'} className={router === '/recursion' ? "activeNav" : "inactiveNav"}>Recursion</Link>
+            <Link href={'/searching'} className={router === '/searching' ? "activeNav" : "inactiveNav"}>Searching</Link>
+            <Link href={'/sorting'} className={router === '/sorting' ? "activeNav" : "inactiveNav"}>Sorting</Link>
             <p className="items-end">Current pathname: {router}</p>
             </nav>
         </aside>
