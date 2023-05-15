@@ -11,7 +11,7 @@ export default function Navigation(){
         <aside className="bg-slate-600 text-white p-2">
         <nav className="flex flex-col gap-1">
         
-        <Link href={'/'}>Link</Link>
+        <Link href={'/frequencyCounter'}>Frequency Counter Pattern</Link>
         <Link href={'/'}>Link</Link>
         <Link href={'/'}>Link</Link>
         <Link href={'/'}>Link</Link>
