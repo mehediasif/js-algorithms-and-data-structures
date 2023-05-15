@@ -15,3 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.inactiveNav {
+  @apply flex mt-2 gap-1 p-1;
+}
+.activeNav {
+  @apply flex mt-2 gap-1 p-1 bg-slate-500 text-red-500 rounded-l-md;
+}
