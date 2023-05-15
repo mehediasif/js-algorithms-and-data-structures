@@ -16,8 +16,14 @@
   }
 }
 .inactiveNav {
-  @apply flex mt-2 gap-1 p-1;
+  @apply flex gap-1 mb-1 mt-1 pb-1 border-b;
 }
 .activeNav {
-  @apply flex mt-2 gap-1 p-1 bg-slate-500 text-red-500 rounded-l-md;
+  @apply flex mt-2 gap-1 p-1 text-red-500 rounded-l-md border-b bg-blue-400;
+}
+.questionHighlight{
+  @apply font-semibold text-red-400 text-start leading-6 font-mono;
+}
+.cardForText{
+  @apply bg-gray-50 border rounded-md border-gray-700 mt-4 px-2;
 }

@@ -19,11 +19,11 @@ export default function Navigation(){
             </Link>
             
             <Link href='/frequencyCounter'>
-            <span className={router.pathname === '/frequencyCounter' ? 'flex mt-2 gap-1 p-1 bg-slate-500 text-red-500 rounded-l-md hover:bg-slate-300' : 'flex mt-2 gap-1 p-1'}>Frequency Counter</span>
+            <span className={router.pathname === '/frequencyCounter' ? 'activeNav' : 'inactiveNav'}>Frequency Counter</span>
             </Link>
-            <Link href={'/multiplePointers'}>Multiple Pointers</Link>
-            <Link href={'/'} className="flex gap-1 mb-4 mt-4 pt-4 pb-2 border-b">Sliding Window</Link>
-            <Link href={'/'} className="flex gap-1 mb-4 mt-4 pt-4 pb-2 border-b">Divide and Conquer</Link>
+            <Link href={'/multiplePointers'} className={router.pathname === '/multiplePointers' ? "border-b bg-blue-400" : "border-b"}>Multiple Pointers</Link>
+            <Link href={'/'} className="inactiveNav">Sliding Window</Link>
+            <Link href={'/'} className="inactiveNav">Divide and Conquer</Link>
             <Link href={'/'}>Dynamic Programming</Link>
             <Link href={'/'} className={router.pathname === '/' ? activeNav : inactiveNav}>Recursion</Link>
             <Link href={'/'} className={router.pathname === '/' ? activeNav : inactiveNav}>Sorting</Link>
