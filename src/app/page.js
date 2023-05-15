@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import GridItems from '../../components/test'
+import GridItems from '../../components/GridItems'
 import Layout from '../../components/Layout'
 import Link from 'next/link'
 

@@ -2,24 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 .inactiveNav {
-  @apply flex gap-1 mb-1 mt-1 pb-1 border-b;
+  @apply flex gap-1 mb-1 mt-1 pb-1 border-2 border-slate-500 cursor-pointer rounded-xl hover:shadow-md hover:shadow-blue-700;
 }
 .activeNav {
-  @apply flex mt-2 gap-1 p-1 text-red-500 rounded-l-md border-b bg-blue-400;
+  @apply flex mt-2 ml-2 gap-1 p-1 text-emerald-700 rounded-md bg-slate-300 ;
 }
 .questionHighlight{
   @apply font-semibold text-red-400 text-start leading-6 font-mono;
