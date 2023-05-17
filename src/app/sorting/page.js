@@ -1,7 +1,6 @@
 'use client'
 import Layout from "../../../components/Layout";
 import SortingGrid from "../../../components/SortingGrid";
-import { Prism } from '@mantine/prism';
 
 export default function SortingAlgos(){
     return(
@@ -10,7 +9,7 @@ export default function SortingAlgos(){
         <div className='cardForText'>
         <h4 className="questionHighlight"><i>Question:</i> What is Sorting Basically?</h4>
         <p className="bg-gray-50 leading-6 text-start text-blue-800 mt-2">
-        <b>Sorting</b> Sorting is the process of rearranging items in a collection (such as an array/tree) so that the items inside the collection are in some kind of order.For example,
+        <b>Sorting</b> is the process of rearranging items in a collection (such as an array/tree) so that the items inside the collection are in some kind of order.For example,
         <ul className="list-disc p-2 ml-4">
         <li>Sorting Numbers from Largest to smallest</li>
         <li>Sorting Names Alphabetically</li>

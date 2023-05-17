@@ -17,3 +17,6 @@
 .gridItemsEach{
   @apply rounded-lg border-2 px-5 py-4 transition-colors text-center hover:border-gray-300 hover:bg-gray-100 shadow-sm shadow-black;
 }
+.sortingItems{
+  @apply font-light text-slate-700/90 text-start leading-7;
+}

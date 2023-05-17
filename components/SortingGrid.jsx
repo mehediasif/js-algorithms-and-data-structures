@@ -7,7 +7,7 @@ export default function SortingGrid(){
         <div className="mb-16 grid gap-2 text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         
         <Link 
-          href={'/'}
+          href={'/sorting/bubbleSort'}
           className="gridItemsEach"
           rel="noopener noreferrer"
         >

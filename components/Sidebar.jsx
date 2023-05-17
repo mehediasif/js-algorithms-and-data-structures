@@ -26,7 +26,7 @@ export default function Navigation(){
             <Link href={'/recursion'} className={router === '/recursion' ? "activeNav" : "inactiveNav"}>Recursion</Link>
             <Link href={'/searching'} className={router === '/searching' ? "activeNav" : "inactiveNav"}>Searching</Link>
             <Link href={'/sorting'} className={router === '/sorting' ? "activeNav" : "inactiveNav"}>Sorting</Link>
-            <p className="items-end">Current pathname: {router}</p>
+            <p className="items-end border-2">Current pathname: {router}</p>
             </nav>
         </aside>
     );
