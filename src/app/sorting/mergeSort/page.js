@@ -3,54 +3,86 @@
 import Layout from "../../../../components/Layout";
 import { Prism } from '@mantine/prism';
 
-export default function BubbleSort(){
+export default function MergeSort(){
     return(<Layout>
-        <h1 className="text-2xl text-center font-light">BubbleSort Algorithm</h1>
+        <h1 className="text-2xl text-center font-light">Merge Sort Algorithm</h1>
         <div className='cardForText'>
-        <h4 className="sortingItems">Bubble Sort is a simple comparison-based sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order. It gets its name from the way smaller or larger elements &quot;bubble&quot; to their correct positions within the array.</h4>
+        <h4 className="sortingItems">Merge Sort is a popular and efficient comparison-based sorting algorithm that follows a divide-and-conquer approach. First, It divides the input array into smaller subarrays, sorts them recursively, and then merges the sorted subarrays to obtain the final sorted array.</h4>
         </div>
 
         <div className="bg-gray-100 border rounded-md border-gray-700 mt-2 px-4 mb-2">
        
-        <h3 className="text-xl text-center">Here&lsquo;s how the Bubble Sort algorithm works with example:</h3>
+        <h3 className="text-xl text-center">Here&lsquo;s how the Merge-Sort algorithm works with example:</h3>
         <ul className="list-decimal p-2 ml-4">
             <li><p>
-            Start with an unsorted array of elements.
-            <p className="p-1 ml-2 font-light">Suppose we have an array: [5, 2, 8, 1, 3].<br />So, In the first pass, we compare 5 and 2, swap them, and the array becomes: [2, 5, 8, 1, 3]</p>
-            </p></li>
-
-            <li><p>
-            Compare each pair of adjacent elements in the array.
+            Divide the unsorted array into two halves.
             </p>
-            <p className="p-1 ml-2 font-light">We compare 5 and 8, no swap is needed.</p>
             </li>
 
             <li><p>
-            If the elements are in the wrong order (e.g., if the current element is greater than the next element in ascending order), swap them.
+            Recursively apply Merge Sort to the two halves until each subarray contains only one element (which is inherently sorted).
             </p>
-            <p className="p-1 ml-2 font-light">We compare 8 and 1, swap them: [2, 5, 1, 8, 3]</p>
             </li>
 
             <li><p>
-            Continue iterating through the array and performing swaps until no more swaps are needed.
+            Merge the sorted subarrays by comparing the elements from each subarray and placing them in the correct order.
             </p>
-            <p className="p-1 ml-2 font-light">We compare 8 and 3, swap them: [2, 5, 1, 3, 8]</p>
             </li>
 
             <li><p>
-            The largest (or smallest) element will &quot;bubble&quot; to the end (or beginning) of the array after each iteration.
+            Continue merging the subarrays until we obtain a single sorted array.
             </p>
-            <p className="p-1 ml-2 font-light">The first pass is complete, and the largest element, 8, is now at the end.</p>
-            </li>
-
-            <li><p>
-            Repeat the above steps until the entire array is sorted.
-            </p>
-            <p className="p-1 ml-2 font-light">We repeat the process for the remaining elements in subsequent passes until the array is fully sorted.</p>
             </li>
         </ul>
+
+        <ul className="list-decimal p-2 ml-4 text-start px-4">
+        <h4 className="mb-2 text-indigo-600 font-serif">Suppose we have an array: [5, 2, 8, 1, 3]</h4>
+            <li><p>
+            Divide the array into two halves: [5, 2] and [8, 1, 3].
+            </p>
+            </li>
+
+            <li className="border-2 shadow-md mt-2 mb-2 px-2 leading-7 font-BlinkMacSystemFont">
+            <p>
+            Recursively apply Merge Sort to each half:
+            </p>
+                <ol className="list-disc ml-4 text-start px-4">
+                <li><p>For [5, 2]:</p>
+
+                <ol className="list-disc ml-4 text-start px-4">
+                <li><p>Divide into [5] and [2].</p></li>
+                <li><p>Merge the two sorted subarrays: [2, 5].</p></li>
+                </ol>
+
+                </li>
+                <li><p>For [8, 1, 3]:</p>
+                <ol className="list-disc ml-4 text-start px-4">
+                <li><p>Divide into [8] and [1, 3].</p></li>
+                <li><p>Recursively apply Merge Sort to [1, 3]:</p>
+                <ul className="list-disc ml-4 text-start px-4">
+                
+                <li><p>Divide into [1] and [3].</p></li>
+                <li><p>Merge the two sorted subarrays: [1, 3].</p></li>
+
+                </ul>
+                </li>
+
+                <li><p>Merge [8] and [1, 3]: [1, 3, 8].</p></li>
+            </ol>
+                </li>
+            </ol>
+            
+            </li>
+
+            <li><p>
+            Merge the two sorted halves [2, 5] and [1, 3, 8] to obtain the final sorted array: [1, 2, 3, 5, 8].
+            </p>
+            </li>
+
+        </ul>
         <h3 className="questionHighlight">Time Complexity:</h3>
-        <p className="tracking-wide">Bubble Sort has a time complexity of <i>O(n^2)</i> in the worst and average cases, where n is the number of elements in the array. It is not particularly efficient for large datasets, but it is easy to understand and implement.</p>
+        <p className="tracking-wide">
+        Merge Sort has a stable time complexity of <i>O(n log n)</i> in all cases, where n is the number of elements in the array. It guarantees good performance even for large datasets and is often preferred when stability or external sorting (sorting large datasets that don&apos;t fit entirely in memory) is required. However, Merge Sort does require additional memory space for the merging process.</p>
         </div>
         </Layout>)
 }
