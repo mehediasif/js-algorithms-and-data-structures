@@ -23,7 +23,7 @@ export default function SortingGrid(){
         </Link>
 
         <Link 
-          href={'/'}
+          href={'/sorting/selectionSort'}
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
@@ -39,7 +39,7 @@ export default function SortingGrid(){
         </Link>
 
         <Link 
-          href={'/'}
+          href={'/sorting/inserionSort'}
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
@@ -55,7 +55,7 @@ export default function SortingGrid(){
         </Link>
 
         <Link 
-          href={'/'}
+          href={'/sorting/mergeSort'}
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
@@ -71,7 +71,7 @@ export default function SortingGrid(){
         </Link>
 
         <Link 
-          href={'/'}
+          href={'/sorting/quickSort'}
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
@@ -87,7 +87,7 @@ export default function SortingGrid(){
         </Link>
         
         <Link 
-          href={'/'}
+          href={'/sorting/heapSort'}
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
@@ -103,7 +103,7 @@ export default function SortingGrid(){
         </Link>
 
         <Link 
-          href={'/'}
+          href={'/sorting/radixSort'}
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
@@ -119,7 +119,7 @@ export default function SortingGrid(){
         </Link>
 
         <Link 
-          href={'/'}
+          href={'/sorting/bucketSort'}
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
