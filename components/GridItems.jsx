@@ -134,10 +134,10 @@ export default function GridItems() {
         </Link>
 
       </div>
-      <div className="relative top-2/3">
+      <div className="relative flex inset-y-0 right-8 left-8 top-1/3 h-4/8 w-8/12">
       
       <div className="group rounded-lg border border-transparent absolute inset-x-5 bottom-0 px-2 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100">
-      <h2 className={`mb-3 text-2xl font-medium`}>This Website was made using the latest features of NextJS</h2>
+      <h2 className={`mb-3 text-2xl font-medium`}>Made with <span className="text-[#e25555]">♥</span> using the latest features of NextJS</h2>
       <Link
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"

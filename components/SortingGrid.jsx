@@ -11,7 +11,7 @@ export default function SortingGrid(){
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
+          <h2 className={`mb-3 text-2xl font-semibold text-[#0025a0f4]`}>
             Bubble Sort{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -27,7 +27,7 @@ export default function SortingGrid(){
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
-        <h2 className={`mb-3 text-2xl text-center font-semibold`}>
+        <h2 className={`mb-3 text-2xl text-center font-semibold text-[#0025a0f4]`}>
             Selection Sort{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -43,7 +43,7 @@ export default function SortingGrid(){
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
+        <h2 className={`mb-3 text-2xl font-semibold text-[#0025a0f4]`}>
             Insertion Sort{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -59,7 +59,7 @@ export default function SortingGrid(){
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
+        <h2 className={`mb-3 text-2xl font-semibold text-[#0025a0f4]`}>
         Merge Sort{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -75,7 +75,7 @@ export default function SortingGrid(){
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
+        <h2 className={`mb-3 text-2xl font-semibold text-[#0025a0f4]`}>
         Quick Sort{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -91,7 +91,7 @@ export default function SortingGrid(){
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
+        <h2 className={`mb-3 text-2xl font-semibold text-[#0025a0f4]`}>
         Heap Sort{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -107,7 +107,7 @@ export default function SortingGrid(){
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
+        <h2 className={`mb-3 text-2xl font-semibold text-[#0025a0f4]`}>
         Radix Sort{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -123,13 +123,13 @@ export default function SortingGrid(){
           className="gridItemsEach"
           rel="noopener noreferrer"
         >
-        <h2 className={`mb-3 text-2xl font-semibold`}>
+        <h2 className={`mb-3 text-2xl font-semibold text-[#0025a0f4]`}>
         Bucket Sort{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-black`}>
             Example of Bucket Sort 
           </p>
         </Link>
